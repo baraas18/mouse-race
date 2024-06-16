@@ -1,0 +1,16 @@
+.GameOver {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    
+    .Game {
+        width: 666px;
+        height: 259px;
+        cursor: pointer;
+        border: 3px solid white;
+        border-radius: 3px;
+        box-shadow: 5px 5px 5px;
+    }
+}

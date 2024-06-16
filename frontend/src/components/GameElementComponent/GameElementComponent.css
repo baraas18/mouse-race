@@ -1,0 +1,71 @@
+.COLLECT {
+    position: absolute;
+    border: 3px solid white;
+    background-color: var(--color);
+    animation: moveUpDown 2s infinite alternate;
+    cursor: pointer;
+}
+
+@keyframes moveUpDown {
+    0% {
+        top: var(--fromTop);
+        left: var(--fromLeft);
+    }
+    100% {
+        top: var(--toTop);
+        left: var(--fromLeft);
+    }
+}
+
+
+.AVOID {
+    position: absolute;
+    border: 3px solid white;
+    background-color: var(--color);
+    animation: moveLeftRight 3s infinite alternate;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+@keyframes moveLeftRight {
+    0% {
+        top: var(--fromTop);
+        left: var(--fromLeft);
+    }
+    100% {
+        top: var(--fromTop);
+        left: var(--toLeft);
+    }
+}
+
+
+.CHANGE {
+    position: absolute;
+    border: 3px solid white;
+    background-color: var(--color);
+    animation: clockwise 10s linear infinite;
+    cursor: pointer;
+}
+
+@keyframes clockwise {
+    0% {
+    top: var(--fromTop);
+    left: var(--fromLeft);
+  }
+  25% {
+    top: var(--toTop);
+    left: var(--fromLeft);
+  }
+  50% {
+    top: var(--toTop);
+    left: var(--toLeft);
+  }
+  75% {
+    top: var(--fromTop);
+    left: var(--toLeft);
+  }
+  100% {
+    top: var(--fromTop);
+    left: var(--fromLeft);
+  }
+}

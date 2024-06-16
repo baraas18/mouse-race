@@ -1,0 +1,16 @@
+{
+    "app": {
+        "name": "backend",
+        "port": 8082,
+        "protocol": "http",
+        "host": "localhost"
+    },
+    "mysql": {
+        "host": "localhost",
+        "user": "root",
+        "password": "",
+        "database": "mouserace",
+        "port": 3306,
+        "connectionLimit": 10
+    }
+}
